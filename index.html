@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cynthia</title>
+      <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/componentd.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+  <body>
+<div class="container">
+
+          <nav class="menu menu--sebastian">
+					<ul class="menu__list">
+						<li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">About</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+					</ul>
+				</nav>
+
+
+      </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+
+      <script src="/js/classie.js"></script>
+      <script src="/js/clipboard.min.js"></script>
+
+      <script>
+			(function() {
+				[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+					var menuItems = menu.querySelectorAll('.menu__link'),
+						setCurrent = function(ev) {
+							ev.preventDefault();
+
+							var item = ev.target.parentNode; // li
+
+							// return if already current
+							if( classie.has(item, 'menu__item--current') ) {
+								return false;
+							}
+							// remove current
+							classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+							// set current
+							classie.add(item, 'menu__item--current');
+						};
+
+					[].slice.call(menuItems).forEach(function(el) {
+						el.addEventListener('click', setCurrent);
+					});
+				});
+
+				[].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+					link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+					new Clipboard(link);
+					link.addEventListener('click', function() {
+						classie.add(link, 'link-copy--animate');
+						setTimeout(function() {
+							classie.remove(link, 'link-copy--animate');
+						}, 300);
+					});
+				});
+			})(window);
+		</script>
+  </body>
+</html>
