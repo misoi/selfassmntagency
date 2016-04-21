@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-background-color:
+background-color:burlywood;
 }
 
 /* Common styles for  menus */
@@ -8,6 +8,9 @@ background-color:
 	line-height: 1;
 	margin: 0 auto 3em;
     align-content: center;
+}
+.img{
+    border-radius: 10px;
 }
 
 .menu__list {
