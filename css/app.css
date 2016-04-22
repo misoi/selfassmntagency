@@ -198,7 +198,7 @@ background-color:burlywood;
 	display: inline-block;
 	width: 440px;
 	margin: 0;
-	padding: 10px;
+	padding: 1px;
 	text-align: left;
 	position: relative;
 }
@@ -217,7 +217,7 @@ background-color:burlywood;
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 10px;
+	padding: 1px;
 	background: #2c3f52;
 	color: #ed4e6e;
 }
