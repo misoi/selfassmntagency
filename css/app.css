@@ -184,3 +184,69 @@ background-color:burlywood;
 .h{
     height: 30px;
 }
+
+/*portfolio style on animatio*/
+.figure {
+	margin: 0;
+	position: relative;
+}
+. figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+    z-index: 10;
+	transition: transform 0.4s;
+}
+.figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #2c3f52;
+	color: #ed4e6e;
+    height: 50px;
+	width: 50%;
+	top: auto;
+	bottom: 0;
+}
+.figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+    font-size: 16px;
+}
+
+.figcaption span:before {
+	content: 'by ';
+}
+
+.figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+
+	position: absolute;
+	right: 20px;
+	top: 30px;
+}
+
+
+@media screen and (max-width: 31.5em) {
+	. {
+		padding: 10px 10px 100px 10px;
+	}
+	.li {
+		width: 100%;
+		min-width: 300px;
+	}
+}
+
+
+.no-touch  figure:hover img,
+. figure.cs-hover img {
+	transform: translateY(-90px);
+}
+
