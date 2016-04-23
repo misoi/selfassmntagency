@@ -10,7 +10,7 @@ background-color:burlywood;
     align-content: center;
 }
 .img{
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .menu__list {
@@ -176,7 +176,7 @@ background-color:burlywood;
 }
 .height{
 
-    height: 200px;
+    height: 150px;
 }
 .centre{
     text-align: center;
@@ -268,7 +268,4 @@ background-color:burlywood;
 	position: absolute;
 	right: 20px;
 	top: 20px;
-}
-.img{
-    border-radius: 30px;
 }
