@@ -282,3 +282,190 @@ background-color:burlywood;
 .text{
     text-align: center;
 }
+.gr {
+	margin: 40px auto 120px;
+	max-width: 100%;
+	width: 90%;
+}
+
+.gr a {
+	float: left;
+	max-width: 250px;
+	width: 65%;
+	color: #333;
+}
+
+.gr a:nth-child(odd) {
+	margin: 30px 0 -30px 0;
+}
+
+.gr figure {
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	background: #333;
+    width:100%
+
+}
+
+.gr figure img {
+	position: relative;
+	display: block;
+	width:100%;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.gr figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 11;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.gr figcaption h2 {
+	margin: 0 0 20px 0;
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 100%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.gr figcaption p {
+	padding: 0 20px;
+	color: #aaa;
+	font-weight: 300;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.gr figcaption h2,
+.gr figcaption p {
+	-webkit-transform: translateY(70px);
+	transform: translateY(70px);
+}
+
+
+
+.gr figcaption,
+.gr figcaption h2,
+.gr figcaption p,
+.gr figure button {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+/* Style for SVG */
+.gr svg {
+	position: absolute;
+	top: -1px; /* fixes rendering issue in FF */
+	z-index: 5;
+	width: 100%;
+	height: 90%;
+}
+
+.gr svg path {
+	fill: #fff;
+}
+
+/* Hover effects */
+.gr a:hover figure img {
+	opacity: 1;
+}
+
+.gr a:hover figcaption h2,
+.gr a:hover figcaption p {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.gr a:hover figcaption p {
+	opacity: 0;
+}
+.demo-2 body {
+	background: #e74c3c;
+}
+
+.demo-2 .gr figcaption h2 {
+	color: #e74c3c;
+}
+
+.demo-2 .gr figcaption p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+}
+
+.demo-2 .gr a:hover figure button {
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.demo-2 .gr figcaption h2,
+.demo-2 .gr figcaption p,
+.demo-3 .gr figcaption h2,
+.demo-3 .gr figcaption p {
+	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1); /* older webkit */
+	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+	timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+}
+
+.demo-2 .gr a:hover figcaption p,
+{
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+}
+@media screen and (max-width: 45em) {
+	.gr {
+		max-width: 500px;
+	}
+
+	.gr a {
+		width: 50%;
+	}
+
+	.gr a:nth-child(3n-1) {
+		margin: 0;
+	}
+
+	.gr a:nth-child(even) {
+		margin: 30px 0 -30px 0;
+	}
+
+
+	.gr figcaption h2 {
+		margin-bottom: 0px;
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+
+	.gr figcaption p {
+		margin: 0;
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 27em) {
+	.gr {
+		max-width: 250px;
+	}
+
+	.gr a {
+		width: 100%;
+	}
+
+	.gr a:nth-child(even) {
+		margin: 0;
+	}
+}
+;
