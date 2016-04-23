@@ -249,10 +249,10 @@ background-color:burlywood;
 
 .no-touch .cs-style-2 figure:hover img,
 .cs-style-2 figure.cs-hover img {
-	-webkit-transform: translateY(-20px);
-	-moz-transform: translateY(-20px);
-	-ms-transform: translateY(-20px);
-	transform: translateY(-20px);
+	-webkit-transform: translateY(-60px);
+	-moz-transform: translateY(-60px);
+	-ms-transform: translateY(-60px);
+	transform: translateY(-60px);
 }
 
 .cs-style-2 figcaption {
