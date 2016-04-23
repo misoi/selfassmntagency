@@ -181,7 +181,7 @@ background-color:burlywood;
 .centre{
     text-align: center;
 }
-.h{
+.hi{
     height: 30px;
 }
 
@@ -268,4 +268,14 @@ background-color:burlywood;
 	position: absolute;
 	right: 20px;
 	top: 20px;
+}
+/*members styling--->*/
+.m{
+    position: cover;
+    border: 5px solid white;
+    height: 100%;
+    width: 100%;
+}
+.img1{
+    height: 250px;
 }
