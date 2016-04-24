@@ -273,8 +273,10 @@ background-color:burlywood;
 .mi{
     position: cover;
     border: 5px solid white;
-    height: 100%;
-    width: 100%;
+
+}
+.p{
+    padding: 5px;
 }
 .img1{
     height: 250px;
@@ -348,8 +350,8 @@ background-color:burlywood;
 
 .gr figcaption h2,
 .gr figcaption p {
-	-webkit-transform: translateY(80px);
-	transform: translateY(80px);
+	-webkit-transform: translateY(30px);
+	transform: translateY(30px);
 }
 
 
