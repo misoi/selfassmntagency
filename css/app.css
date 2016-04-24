@@ -427,3 +427,13 @@ background-color:burlywood;
 	-webkit-transition-duration: 0.1s;
 	transition-duration: 0.1s;
 }
+.button1{
+    background-color: black;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    align-content: center;
+}
+.c{
+    color: white;
+}
