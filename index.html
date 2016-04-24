@@ -142,16 +142,16 @@
         <div class="large-12 columns text-centre">
           <div id="gr" class="gr demo-2">
 				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+                     <div class="large-3 columns ">
                     <figure>
-            <div class="large-3 columns ">
 
-                <img src="img/members/cynthia.jpg" class="m img1 " width="100%" height="100%">
+                <img src="img/members/cynthia.jpg" class="mi img1 " width="100%" height="100%">
                     <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
                     <figcaption>
-							<h4>chepkemoi cynthia</h4>
+							<h2>chepkemoi cynthia</h2>
 							<p>C.E.O SMAGY DESIGN</p>
 						</figcaption>
-                </div></figure></a>
+               </figure> </div></a>
 
             <div class="large-3 columns ">
                 <img src="img/members/1.jpg" class="m img1" width="100%" height="400px">
@@ -185,7 +185,7 @@
         </div>
     </div>
  </div>
-      </div>
+
 
 <script src="js/hovers.js"></script>
       <script src="js/snap.svg-min.js"></script>
@@ -234,6 +234,35 @@
 					});
 				});
 			})(window);
+		</script>
+<!--      members script-->
+      <script>
+			(function() {
+
+				function init() {
+					var speed = 250,
+						easing = mina.easeinout;
+
+					[].slice.call ( document.querySelectorAll( '#gr > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
 		</script>
   </body>
 </html>

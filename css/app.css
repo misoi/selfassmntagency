@@ -270,7 +270,7 @@ background-color:burlywood;
 	top: 20px;
 }
 /*members styling--->*/
-.m{
+.mi{
     position: cover;
     border: 5px solid white;
     height: 100%;
@@ -290,8 +290,8 @@ background-color:burlywood;
 
 .gr a {
 	float: left;
-	max-width: 250px;
-	width: 65%;
+	max-width: 100%;
+	width: 300%;
 	color: #333;
 }
 
@@ -320,7 +320,7 @@ background-color:burlywood;
 .gr figcaption {
 	position: absolute;
 	top: 0;
-	z-index: 11;
+	z-index: 100;
 	padding: 10px;
 	width: 100%;
 	height: 100%;
@@ -348,8 +348,8 @@ background-color:burlywood;
 
 .gr figcaption h2,
 .gr figcaption p {
-	-webkit-transform: translateY(70px);
-	transform: translateY(70px);
+	-webkit-transform: translateY(100px);
+	transform: translateY(100px);
 }
 
 
@@ -365,7 +365,7 @@ background-color:burlywood;
 .gr svg {
 	position: absolute;
 	top: -1px; /* fixes rendering issue in FF */
-	z-index: 5;
+	z-index: 10;
 	width: 100%;
 	height: 90%;
 }
