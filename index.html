@@ -21,11 +21,11 @@
             <div class="large-8columns">
                 <nav class="menu menu--sebastian">
                     <ul class="menu__list">
-                        <li class="menu__item menu__item--current"><a href="#home" class="menu__link">Home</a></li>
-                        <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                        <li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#abt" class="menu__link">About</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
                         <li class="menu__item"><a href="#port" class="menu__link">Portfolio</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Members</a></li>
+                        <li class="menu__item"><a href="#mem" class="menu__link">Members</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
                     </ul>
                 </nav>
@@ -54,10 +54,12 @@
   </h1>
                 </div>
             </div>
+            <br>
+            <br>
         </div>
         <div class="large-12 columns height"></div>
-        <div class="row " id="abt">
-            <div class="large-12 columns">
+        <div class="row ">
+            <div class="large-12 columns" id="abt">
 
                 <h1 class="centre ab">About us</h1>
                 <br>
@@ -74,8 +76,8 @@
                     <img src="img/6514137.jpg">
                 </div>
                 <!--    Portfolio row-->
-                <div class="row" id="port">
-                    <div class="large-12 columns height">
+                <div class="row">
+                    <div class="large-12 columns height" id="port">
                         <br>
                         <br>
                         <br>
@@ -168,7 +170,7 @@
                 <br>
                 <br>
                 <br>
-                <div class="row  ">
+                <div class="row " id="mem">
                     <div class="large-12 columns">
                         <br>
                         <br>
@@ -443,7 +445,7 @@
 				[].slice.call(document.querySelectorAll('.menu')).forEach(function (menu) {
                 var menuItems = menu.querySelectorAll('.menu__link'),
                     setCurrent = function (ev) {
-                        ev.preventDefault();
+                        //
 
                         var item = ev.target.parentNode; // li
 
