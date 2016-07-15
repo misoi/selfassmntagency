@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    background-color: burlywood;
+    background-color: ;
     height: auto;
 }
 
@@ -115,12 +115,15 @@
 
 .header {
     text-align: center;
+    color: white;
+    font-size: 32px;
 }
 
 .cd-words-wrapper {
     display: inline-block;
     position: relative;
     text-align: left;
+    color: white;
 }
 
 .cd-words-wrapper b {
@@ -715,4 +718,11 @@
 }
 .logo i {
     margin-right: 0.5rem;
+}
+.back {
+    background-image: url(../img/meme.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
