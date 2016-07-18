@@ -197,6 +197,7 @@
 
 .height {
     height: 150px;
+    color: white;
 }
 
 .centre {
@@ -725,4 +726,21 @@
     max-width: 100%;
     background-size: cover;
     background-attachment: fixed;
+}
+.abs {
+    background-image: url(../img/fac6.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    /*
+    background-color: #1D1F21;
+    color: white;
+*/
+    /*
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+*/
 }
